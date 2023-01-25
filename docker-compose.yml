@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    platform: linux/arm64
+    container_name: another-aipa
+    build: .
+    volumes:
+      - .:/app
+    tty: true
+    # port:
+    #   - 5000:3000
